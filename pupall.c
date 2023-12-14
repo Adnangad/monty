@@ -3,7 +3,7 @@
 /**
  * push - adds element to stack
  * @stack:the tstack
- * @line_numberthe line number
+ * @line_number:the line number
  *
  * Return:none
  */
@@ -12,6 +12,7 @@ void push(stack_t **stack, unsigned int line_number)
 	char *val_str;
 	int val;
 	stack_t *new;
+
 	val_str = strtok(NULL, "\n");
 
 	if (val_str == NULL)

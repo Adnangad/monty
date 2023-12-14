@@ -1,10 +1,5 @@
 #include "monty.h"
 
-instruction_t inst[] = {
-	{"push", push},
-	{"pall", pall},
-	{NULL, NULL}
-};
 /**
  * interpreter - reads and executes functions
  * @file_path:holds the functions
@@ -13,6 +8,11 @@ instruction_t inst[] = {
  */
 void interpreter(const char *file_path)
 {
+	instruction_t inst[] = {
+		{"push", push},
+		{"pall", pall},
+		{NULL, NULL}
+	};
 	char line[100];
 	stack_t *stack = NULL;
 	char *opcode;
