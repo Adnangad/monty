@@ -19,6 +19,11 @@ void divide(stack_t **stack, unsigned int line_number)
                 fprintf(stderr, "L%d: can't div, stack too short\n", line_number);
                 exit(EXIT_FAILURE);
         }
+	if (p->n == 0)
+	{
+		fprintf(stderr, "L%d: division by zero\n", line_number);
+		exit(EXIT_FAILURE);
+	}
         rez = p->next->n / p->n;
         p->next->n = rez;
         *stack = p->next;
