@@ -11,6 +11,7 @@ void interpreter(const char *file_path)
 	instruction_t inst[] = {
 		{"push", push},
 		{"pall", pall},
+		{"pint", f_pint},
 		{NULL, NULL}
 	};
 	char line[100];
