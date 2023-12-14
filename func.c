@@ -13,7 +13,7 @@ void push(stack_t **stack, int value)
 
     if (new == NULL)
     {
-        fprintf(stderr, "Error Malloc failed\n");
+        fprintf(stderr, "Error: malloc failed\n");
         exit(EXIT_FAILURE);
     }
     else
@@ -77,7 +77,7 @@ void interpreter(const char *file_path)
 
     if (file == NULL)
     {
-        fprintf(stderr, "Cant open file %s\n", file_path);
+        fprintf(stderr, "Error: Can't open file %s\n", file_path);
         exit(EXIT_FAILURE);
     }
     else
@@ -99,7 +99,7 @@ void interpreter(const char *file_path)
 
                         if (val_str == NULL)
                         {
-                            fprintf(stderr, "failed num of inputs\n");
+                            fprintf(stderr, "L%d: usage: push integer\n", line_number);
                             exit(EXIT_FAILURE);
                         }
                         val = atoi(val_str);
