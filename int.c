@@ -17,6 +17,7 @@ void interpreter(const char *file_path)
 		{"add", add},
 		{"nop", nop},
 		{"sub", sub},
+		{"div", divide},
 		{NULL, NULL}
 	};
 	char line[100];
