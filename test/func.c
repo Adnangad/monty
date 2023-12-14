@@ -45,9 +45,9 @@ void pall(stack_t **stack)
 {
     stack_t *point = *stack;
 
-    if (stack == NULL)
+    if (point == NULL)
     {
-        fprintf(stderr, "Error, stack underflow\n");
+        return;
     }
     else
     {
