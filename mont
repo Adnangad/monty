@@ -1,6 +1,5 @@
 push 5
 push 10
 push 15
-push 20
-swap
+add
 pall
