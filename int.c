@@ -15,6 +15,7 @@ void interpreter(const char *file_path)
 		{"pop", pop},
 		{"swap", swap},
 		{"add", add},
+		{"nop", nop},
 		{NULL, NULL}
 	};
 	char line[100];
