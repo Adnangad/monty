@@ -1,6 +1,6 @@
 push 5
 push 30
 push 15
-div
+mul
 nop
 pall
